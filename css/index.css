@@ -1,0 +1,118 @@
+:root {
+    font-family: 'Noto Sans KR', sans-serif !important;
+    
+    /* --bg: #0f1421;
+    --btn: #272b38;
+    --txt: #cfcfcf;
+    --border: #303540;
+    --section: #191f2c; */
+
+    --bg: #D8DEE9;
+    --btn: #D8DEE9;
+    --txt: #2E3440;
+    --border: #AAB2CD;
+    --section: #E5E9F0;
+    --red: #ff4f63;
+    --pink: #ff6384;
+    --blue: #1e69fe;
+}
+
+@media screen and (min-width: 880px) {
+    body {
+        background-color: var(--bg);
+        color: var(--txt);
+        font-size: 12px;
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    .main {
+        /* background-color: #191f2c; */
+        display: grid;
+        min-width: 880px;
+        max-width: 1580px;
+    }
+}
+
+a {
+    color: var(--blue);
+}
+
+a:visited {
+    color: var(--blue);
+}
+
+
+button {
+    background-color: var(--btn);
+    color: var(--txt);
+    border: var(--border) 1px solid;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.value {
+    text-align: center;
+    color: var(--pink);
+}
+
+.value .price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+section {
+    background-color: var(--section);
+    color: var(--txt);
+    border: var(--border) 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 25px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+video {
+    border-radius: 15px;
+    width: 80%;
+}
+
+@media screen and (max-width: 880px) {
+    body {
+        background-color: var(--bg);
+        color: var(--txt);
+        font-size: 12px;
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: right;
+    }
+
+    button {
+        width: 30%;
+        margin: 5px 3px;
+    }
+
+    .main {
+        display: inline;
+        align-items: center;
+    }
+
+    section {
+        width: 280px;
+    }
+}
