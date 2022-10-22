@@ -1,7 +1,7 @@
 class App {
     constructor() {
         const video = document.getElementById('videoInput')
-        
+
         if (this.isDarkMode()) this.changeTheme(true)
         navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
@@ -14,7 +14,7 @@ class App {
             console.log(error)
         }
         navigator.getUserMedia(constraints, successCallback, errorCallback)
-
+ 
         const item = document.getElementById('item')
         
         this.speak(item.innerText, {
